@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DOM-Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-black">
+    <!-- //DOM - Document Object Model -->
+    <div >
+        <h1 style="color: brown;" id= "title" class ="heading">DOM  leaning on chai and code <span style="display: none;">test text in it</span></h1>
+       <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Fugiat accusamus ab possimus vitae quo nisi minus voluptas neque nihil blanditiis quisquam porro facilis similique esse consectetur,
+             praesentium doloremque recusandae eius?</p>
+             <input type="password" name="" id="">
+             <ul>
+                <li class="list-item">one</li>
+                <li class="list-item">two</li>
+                <li class="list-item">three</li>
+             </ul>
+    </div>
+    <!-- console.log(Document.baseURI) 
+    console.log(Document.links)
+    some properties of array  can be used 
+    such as console.log(Document.links[2]) 
+    document.getElementById('title').classNmae 
+    document.getElementById('title').getAtribute('class') 
+    document.getElementById('title').setAtribute('class', 'test' 'heading') 
+    const title =  document.getElementById('title')
+    title.style.background = "green"
+    title.style.padding = "15px"
+    CSS SELECTOR
+    queryselector
+    document.querySelector('input[type="password"]')
+    document.querySelector('ul') this will select all the list present in the unordered list
+    we use a variable so that we can process with styling part 
+    example
+    const myul =  document.querySelector('ul')
+    cont myli = myul.queleSlector('li')  it will select the first child means first list and now we can use to style it futher
+    myli.style.backgroundcolor = "green"
+    myli.style.padding = "13px"
+
+   const myLiList= document.querySelectoeAll('li')
+    it will return node list which is similar to array because have some property
+    example
+   myLiLIST[0].style.color = 'green' it will change the color of the first list 
+
+   there is way to convert into array to use the property of map
+   document.getElementByClassName('list-item') it return HTMLCollection which is diffrent from the array and nodelist
+   there is no option of looping 
+   so we convert it into array 
+   Array.from(tempClassList)
+
+   document.querySelectorAll('.mw-headline') we use dot to select class
+   const myh2 = document.querySelectorAll('.mw-headline')
+   myh2.for.each(function(h) {
+   h.style.color ='black';
+   h.style.backgroundcolor = 'red';
+   h.style.padding = '10px';
+   h.insertext ='anupriya'})
+    ---> 
     
+
 </body>
 </html>
